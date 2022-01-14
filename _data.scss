@@ -88,3 +88,15 @@
         }
     }
 }
+@media screen and (max-width:420px){
+    .container{
+        .content-card{
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
