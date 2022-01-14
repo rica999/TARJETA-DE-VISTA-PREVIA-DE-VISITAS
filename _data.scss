@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600&family=Noto+Sans&family=Open+Sans:wght@691&display=swap');
+.container{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    justify-items: center;
+    .content-card{
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px 0 0 10px;
+        padding: 35px 60px 35px 70px ;
+        h2{
+            color: white;
+            font-size: 35px;
+            font-family: 'Inter', sans-serif;
+            span{
+                color: hsl(277, 64%, 61%);
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        p{
+            color: hsla(0, 0%, 100%, 0.80);
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            padding-right: 70px;
+            line-height: 22px;
+        }
+        .data-card{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    line-height: 25px;
+                }
+                li:first-child{
+                    color: white;
+                    font-size: 20px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                li:last-child{
+                    font-size: 11px;
+                    color: hsla(0, 0%, 100%, 0.6);
+                    font-family: 'Noto Sans', sans-serif;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .image-card{
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .container{
+        margin: 0;
+        max-height: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        .content-card{
+            border-radius: 0 0 10px 10px;
+            p{
+                padding: 0;
+            }
+        }
+        .image-card{
+            img{
+                border-radius: 10px 10px 0 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:513px){
+    .container{
+        .content-card{
+            .data-card{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 30px;
+            }
+        }
+    }
+}
