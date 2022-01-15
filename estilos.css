@@ -65,6 +65,8 @@
 
 .container .image-card {
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(112, 24, 184, 0.6))), url(images/image-header-desktop.jpg);
+  background: linear-gradient(rgba(112, 24, 184, 0.6)), url(images/image-header-desktop.jpg);
 }
 
 .container .image-card img {
