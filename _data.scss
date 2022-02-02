@@ -8,7 +8,7 @@
         background-color: hsl(244, 38%, 16%);
         border-radius: 10px 0 0 10px;
         padding: 35px 60px 35px 70px ;
-        h2{
+        h1{
             color: white;
             font-size: 35px;
             font-family: 'Inter', sans-serif;
@@ -94,7 +94,7 @@
 @media screen and (max-width:420px){
     .container{
         .content-card{
-            h2{
+            h1{
                 font-size: 25px;
             }
             p{
